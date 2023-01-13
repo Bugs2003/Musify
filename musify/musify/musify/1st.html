@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="1st.css">
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <title>Musify</title>
+</head>
+<style>
+  .navbar_main {
+    font-size: 2rem;
+    margin-right: 22rem;
+    text-decoration: none;
+    color: red;
+  }
+
+  .btn {
+    border: 2px solid;
+    border-image-slice: 1;
+    background: var(--gradient) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    border-image-source: var(--gradient) !important;
+    text-decoration: none;
+    transition: all 0.8s ease;
+    border: aliceblue;
+
+  }
+
+  .mx-1 {
+    margin-right: 0.25rem !important;
+    margin-left: 2rem !important;
+    border: aliceblue;
+  }
+
+  .btn:hover,
+  .btn:focus {
+    background: var(--gradient) !important;
+    -webkit-background-clip: none !important;
+    -webkit-text-fill-color: rgb(255, 255, 255) !important;
+    border: 5px solid #fff !important;
+    box-shadow: #222 1px 0 10px;
+    border-radius: 10px;
+  }
+
+  :root {
+    --gradient: linear-gradient(to left top, #dd2476 10%, #ff512f 90%) !important;
+  }
+
+  .navbar_main:hover {
+    color: black;
+  }
+
+  .nav-item_1 {
+    padding-right: 2rem;
+  }
+
+  @media(max-width: 700px) {
+    .navbar_main {
+      font-size: 2rem;
+      display: flex;
+      padding-right: 10px;
+    }
+
+    .navbar-toggler-icon_1 {
+      font-size: 1rem;
+    }
+
+    .navbar-toggler-icon_1:hover {
+      color: black;
+    }
+  }
+</style>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar_main" href="loging.html">Musify <i class="fa-solid fa-headphones"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon_1"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <!-- <li class="nav-item_1">
+            <a class="nav-link active" aria-current="page" href="1st.html">Home <i class="fa-solid fa-house"></i></a>
+          </li> -->
+          <li class="nav-item_1">
+            <a class="nav-link active" aria-current="page" href="album.html">Hit Singers <i
+                class="fa-solid fa-microphone"></i></a>
+          </li>
+
+          <li class="nav-item_1">
+            <a class="nav-link active" aria-current="page" href="support.html">Support <i
+                class="fa-solid fa-right-to-bracket"></i></a>
+          </li>
+
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- carousel -->
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+        aria-label="Slide 5"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a href="#">
+          <img
+            src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/639c4f651e73c1151be5642d/BANNER_26970035468863.jpeg"
+            class="d-block w-100" alt="...">
+        </a>
+      </div>
+
+      <div class="carousel-item">
+        <a href="">
+          <img
+            src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-zion/zion/1671446845614-govindabanner.png"
+            class="d-block w-100" alt="...">
+        </a>
+      </div>
+
+      <div class="carousel-item">
+        <a href="">
+          <img
+            src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/639c5a4fe188e868da58677a/BANNER_287726404003941.jpeg"
+            class="d-block w-100" alt="...">
+        </a>
+      </div>
+
+      <div class="carousel-item">
+        <a href="">
+          <img
+            src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/6384605632c02f52d4d88977/BANNER_19657953560003.jpg"
+            class="d-block w-100" alt="...">
+        </a>
+      </div>
+
+      <div class="carousel-item">
+        <a href="">
+          <img
+            src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/638eda4c340f1c569fab8d92/BANNER_243803483524747.jpeg"
+            class="d-block w-100" alt="...">
+        </a>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+  <h1 class="h1">New Releases <i class="fa-solid fa-music"></i></h1>
+
+  <div class="container mx-auto mt-4">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card" style="width: 100%;">
+          <img
+            src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://img-dynamic.wynk.in/unsafe/top/filters:watermark(https://discovery-prod-arsenal.s3.ap-south-1.amazonaws.com/arsenal/library/new_songs_mix_1/var4/v4/new_songs_mix_1.png,0,-0,0,100,100)/https://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_wmg/music/075679710611/1668115848/srch_wmg_A10302B0008089306Y.jpg?dynamic=true"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">New Songs Mix</h5>
+            <a href="2nd.html" class="btn "><i class="fa-solid fa-play"></i> Playlist</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 100%;">
+          <img
+            src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/63a046ec26254231d9f2f3db/COLLECTION_514582656128038.png"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">New Hindi Songs</h5>
+            <a href="2nd.html" class="btn"><i class="fa-solid fa-play"></i> Playlist</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 100%;">
+          <img
+            src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/639c414923b7970a99fd311c/COLLECTION_25163668640659.png"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">New English Songs</h5>
+            <a href="2nd.html" class="btn"><i class="fa-solid fa-play"></i> Playlist</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card" style="width: 100%;">
+          <img
+            src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_sonymusic/music/A10301A00048952956_20221104151759320/1667572522/srch_sonymusic_A10328E0010491630Q.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Walkerverse Pt. II</h5>
+            <a href="2nd.html" class="btn"><i class="fa-solid fa-play"></i> Playlist</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 100%;">
+          <img
+            src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3.ap-south-1.amazonaws.com/wynk-music-cms/srch_hungama/8902894361811_20221130091209/8902894361811/1669780005954/resources/8902894361811.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">An Action Hero</h5>
+            <a href="2nd.html" class="btn"><i class="fa-solid fa-play"></i> Playlist</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 100%;">
+          <img
+            src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3.ap-south-1.amazonaws.com/wynk-music-cms/srch_zeemusic/2022-12/11/09-25/ZMC05815.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Bhediya</h5>
+            <a href="2nd.html" class="btn"><i class="fa-solid fa-play"></i> Playlist</a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <h1 class="h1">Top Charts <i class="fa-solid fa-music"></i></h1>
+
+      <div class="container mx-auto mt-4">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card" style="width: 100%;">
+              <img
+                src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/6391c9b7aa1ce1757970d63b/COLLECTION_34888158570394.png"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Weekly Top 20: English</h5>
+                <a href="2nd.html" class="btn "><i class="fa-solid fa-play"></i> Playlist</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 100%;">
+              <img
+                src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/639ad22fc1897c4162a1c748/COLLECTION_949648424203.jpeg"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Musify Top 100</h5>
+                <a href="2nd.html" class="btn"><i class="fa-solid fa-play"></i> Playlist</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 100%;">
+              <img
+                src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/6360d6a010047e565adebe0c/COLLECTION_621861641476651.png"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Romance Top 40</h5>
+                <a href="2nd.html" class="btn "><i class="fa-solid fa-play"></i> Playlist</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card" style="width: 100%;">
+              <img
+                src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/639de62d556d96645b4f304d/COLLECTION_48321423826406.png"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Social Media Top 20: English</h5>
+                <a href="2nd.html" class="btn"><i class="fa-solid fa-play"></i> Playlist</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 100%;">
+              <img
+                src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/6377707398e92e0847cb8c48/COLLECTION_29624411281309.png"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Dance Top 50</h5>
+                <a href="2nd.html" class="btn"><i class="fa-solid fa-play"></i> Playlist</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 100%;">
+              <img
+                src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/62fde34c07f7e4073928c838/COLLECTION_148182837164832.png"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Indie Top 20</h5>
+                <a href="2nd.html" class="btn"><i class="fa-solid fa-play"></i> Playlist</a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+          <h1 class="h1">International Top Hits <i class="fa-solid fa-music"></i></h1>
+
+          <div class="container mx-auto mt-4">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card" style="width: 100%;">
+                  <img
+                    src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_universalmusic/music/update/00602448475596_20220826000727783/1661476851/srch_universalmusic_00602448475596-NGA3B2214021.jpg"
+                    class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Calm Down</h5>
+                    <a href="2nd.html" class="btn "><i class="fa-solid fa-play"></i> Playlist</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card" style="width: 100%;">
+                  <img
+                    src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_sonymusic/music/srch_sonymusic_A10328E0007615859P.jpg"
+                    class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Unstoppable</h5>
+                    <a href="2nd.html" class="btn"><i class="fa-solid fa-play"></i> Playlist</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card" style="width: 100%;">
+                  <img
+                    src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_universalmusic/music/update/00602445856725_20220922180616552/1663874422/srch_universalmusic_00602445856725-GBUM72205415.jpg"
+                    class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Unholy</h5>
+                    <a href="2nd.html" class="btn "><i class="fa-solid fa-play"></i> Playlist</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card" style="width: 100%;">
+                  <img
+                    src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_sonymusic/music/A10301A0004622804Y_20210706191109211/1625592609/srch_sonymusic_A10328E00100230915.jpg"
+                    class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">STAY</h5>
+                    <a href="2nd.html" class="btn"><i class="fa-solid fa-play"></i> Playlist</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card" style="width: 100%;">
+                  <img
+                    src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_wmg/music/054645273367/1655164540/srch_wmg_A10302B0005927119X.jpg"
+                    class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Go Down Deh </h5>
+                    <a href="2nd.html" class="btn"><i class="fa-solid fa-play"></i> Playlist</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card" style="width: 100%;">
+                  <img
+                    src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_universalmusic/music/update/1599607201/srch_universalmusic_00602557056273-QMZSY1600019.jpg"
+                    class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Let Me Love You</h5>
+                    <a href="2nd.html" class="btn"><i class="fa-solid fa-play"></i> Playlist</a>
+                  </div>
+                </div>
+              </div>
+              <!-- footer -->
+
+              <footer class="bg-dark text-center text-white">
+                <div class="container p-4 pb-0">
+                  <section class="mb-4">
+                    <a class="btn btn-outline-light btn-floating m-2" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+
+
+                    <a class="btn btn-outline-light btn-floating m-2" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+
+
+                    <a class="btn btn-outline-light btn-floating m-2" href="#!" role="button"><i
+                        class="fab fa-google"></i></a>
+
+
+                    <a class="btn btn-outline-light btn-floating m-2" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+
+                    <a class="btn btn-outline-light btn-floating m-2" href="#!" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+
+                  </section>
+                </div>
+
+                <!-- Copyright -->
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                  © 2022 Copyright:
+                  <a class="text-white" href="loging.html">musify.com</a>
+                </div>
+                <!-- Copyright -->
+              </footer>
+
+
+
+
+              <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

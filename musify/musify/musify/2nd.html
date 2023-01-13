@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="1st.css">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <title>Musify</title>
+</head>
+<style>
+    .navbar_main {
+        font-size: 2rem;
+        margin-right: 22rem;
+        text-decoration: none;
+        color: red;
+    }
+
+    .navbar_main:hover {
+        color: black;
+    }
+
+    .nav-item_1 {
+        padding-right: 1rem;
+    }
+
+    .btn {
+        border: 2px solid;
+        border-image-slice: 1;
+        background: var(--gradient) !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        border-image-source: var(--gradient) !important;
+        text-decoration: none;
+        transition: all 0.8s ease;
+        border: aliceblue;
+
+    }
+
+    .mx-1 {
+        margin-right: 0.25rem !important;
+        margin-left: 2rem !important;
+        border: aliceblue;
+    }
+
+    .btn:hover,
+    .btn:focus {
+        background: var(--gradient) !important;
+        -webkit-background-clip: none !important;
+        -webkit-text-fill-color: rgb(255, 255, 255) !important;
+        border: 5px solid #fff !important;
+        box-shadow: #222 1px 0 10px;
+        border-radius: 10px;
+    }
+
+    @media(max-width: 700px) {
+        .navbar_main {
+            font-size: 2rem;
+            display: flex;
+            padding-right: 10px;
+        }
+
+        .navbar-toggler-icon_1 {
+            font-size: 1rem;
+        }
+
+        .navbar-toggler-icon_1:hover {
+            color: black;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .col-md-5 {
+            width: 38%;
+        }
+
+    }
+</style>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar_main" href="1st.html">Musify <i class="fa-solid fa-headphones"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- <li class="nav-item_1">
+                        <a class="nav-link active" aria-current="page" href="1st.html">Home <i
+                                class="fa-solid fa-house"></i></a>
+                    </li> -->
+
+                    <li class="nav-item_1">
+                        <a class="nav-link active" aria-current="page" href="album.html">Hit Singers <i
+                                class="fa-solid fa-microphone"></i></a>
+                    </li>
+
+                    <li class="nav-item_1">
+                        <a class="nav-link active" aria-current="page" href="support.html">Support <i
+                                class="fa-solid fa-right-to-bracket"></i></a>
+                    </li>
+
+                    <li class="nav-item_1">
+                        <a class="nav-link active" aria-current="page" href="about.html">Team <i
+                                class="fa-solid fa-people-group"></i></a>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- crousel -->
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="#">
+                    <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/63917ed524ad73458295e474/BANNER_1051196194374750.jpg"
+                        class="d-block w-100" alt="...">
+
+                </a>
+            </div>
+
+            <div class="carousel-item">
+                <a href="">
+                    <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/6391b6c8a6c74f6e2a8cc5bb/BANNER_2442633531759212.jpeg"
+                        class="d-block w-100" alt="...">
+
+                </a>
+            </div>
+
+            <div class="carousel-item">
+                <a href="">
+                    <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/6392e35c31ec7f57e3962529/BANNER_17433821856872.jpg"
+                        class="d-block w-100" alt="...">
+                </a>
+            </div>
+
+            <div class="carousel-item">
+                <a href="">
+                    <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-zion/zion/1670413410207-Full-Album-Sukoon-FeaturedBanner.png"
+                        class="d-block w-100" alt="...">
+                </a>
+            </div>
+
+            <div class="carousel-item">
+                <a href="">
+                    <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-zion/zion/1671099933330-Anniversary-Different-World-FeaturedBanner.jpg"
+                        class="d-block w-100" alt="...">
+                </a>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- Playlist -->
+    <h1>Top hits in India <i class="fa-solid fa-music"></i></h1>
+    <div class="container mt-5 mb-5">
+        <div class="d-flex justify-content-center row">
+            <div class="col-md-10">
+                <div class="row p-2 bg-white border rounded">
+                    <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image"
+                            src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/artists/profile/5a8eafc02951624319d6c385.png">
+                    </div>
+                    <div class="col-md-5 mt-1">
+
+                        <div class="d-flex flex-row">
+                            <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                    class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                            <span></span>
+                        </div>
+
+                        <p class="text-justify text-truncate para mb-0">
+                            YO YO HONEY SINGH <br> IS AN INDIAN MUSIC PRODUCER, COMPOSER, <br> RAPPER, SINGER, LYRICIST,
+                            AND FILM ACTOR.<br><br></p>
+                    </div>
+                    <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+
+                        <div class="d-flex flex-column mt-4">
+                            <audio controls>
+                                <source src="Songs/1st.mp3" type="audio/ogg">
+                                <source src="Songs/1st.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="row p-2 bg-white border rounded mt-2">
+                    <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image"
+                            src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/artists/profile/5f6c61947c0c587ea57d8e5e.png">
+                    </div>
+                    <div class="col-md-5 mt-1">
+
+                        <div class="d-flex flex-row">
+                            <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                    class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                            <span></span>
+                        </div>
+
+                        <p class="text-justify text-truncate para mb-0">Rapper King is also known by names such as <br>
+                            King Rocco and Badnaam Raja, however, his <br> real name is Arpan Kumar Chandel. The rapper
+                            <br> has performed with many iconic celebrities <br> such as Raftaar, Nucleya, Raja Kumari
+                            and <br> others. Advertisement. <br><br>
+                        </p>
+                    </div>
+                    <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+                        <div class="d-flex flex-column mt-4">
+                            <audio controls>
+                                <source src="Songs/2nd.mp3" type="audio/ogg">
+                                <source src="Songs/2nd.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row p-2 bg-white border rounded mt-2">
+                    <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image"
+                            src="https://ik.imagekit.io/j83rchiauw/A_List_Star/paradox-biography-tring.png">
+                    </div>
+                    <div class="col-md-5 mt-1">
+
+                        <div class="d-flex flex-row">
+                            <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                    class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                            <span></span>
+                        </div>
+
+                        <p class="text-justify text-truncate para mb-0">Paradox is an Indian rapper and music composer
+                            <br> in India. Paradox’s real name is Tanishq Singh. <br> Paradox's birth date is 2003.
+                            Paradox’s birth <br> year is 2003. Paradox’s age is 18 years as <br> of 2022. Paradox’s
+                            birthplace is Delhi.<br><br>
+                        </p>
+                    </div>
+                    <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+
+                        <div class="d-flex flex-column mt-4">
+                            <audio controls>
+                                <source src="Songs/3rd.mp3" type="audio/ogg">
+                                <source src="Songs/3rd.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="row p-2 bg-white border rounded mt-2">
+                    <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image"
+                            src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3.ap-south-1.amazonaws.com/discovery-prod-zion/zion/1670060506230-Mc-Square-wa_4RxOcO9-gg.jpg">
+                    </div>
+                    <div class="col-md-5 mt-1">
+
+                        <div class="d-flex flex-row">
+                            <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                    class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                            <span></span>
+                        </div>
+
+                        <p class="text-justify text-truncate para mb-0">MC Square is an Indian Rapper, Hip-Hop <br>
+                            Artist, and music composer. The real name of <br> the rapper is Abhishek Bensla. He is known
+                            <br> and well-recognized by his stage name MC Square. <br> Abhishek gained popularity and
+                            fandom from <br> the MTV reality show MTV Hustle Season.<br><br>
+                        </p>
+                    </div>
+                    <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+
+                        <div class="d-flex flex-column mt-4">
+                            <audio controls>
+                                <source src="Songs/4th.mp3" type="audio/ogg">
+                                <source src="Songs/4th.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- h1 -->
+    <h1>International hits<i class="fa-solid fa-music"></i></h1>
+
+    <div class="container mt-5 mb-5">
+        <div class="d-flex justify-content-center row">
+            <div class="col-md-10">
+                <div class="row p-2 bg-white border rounded">
+                    <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image"
+                            src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/artists/profile/5d2824399f2b8d20e61e276e.png">
+                    </div>
+                    <div class="col-md-5 mt-1">
+                        <!-- <h5>Quant olap shirts</h5> -->
+                        <div class="d-flex flex-row">
+                            <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                    class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                            <span></span>
+                        </div>
+
+                        <p class="text-justify text-truncate para mb-0">Billie Eilish Pirate Baird O'Connell was born in
+                            <br> Los Angeles, California, on December 18, <br> 2001. She is the daughter of actress and
+                            <br> teacher Maggie Baird and actor <br> Eilish is of Irish and Scottish descent. <br><br>
+                        </p>
+                    </div>
+                    <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+
+                        <div class="d-flex flex-column mt-4">
+                            <audio controls>
+                                <source src="Songs/5th.mp3" type="audio/ogg">
+                                <source src="Songs/5th.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="row p-2 bg-white border rounded mt-2">
+                    <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image"
+                            src="https://www.onthisday.com/images/people/ariana-grande-medium.jpg">
+                    </div>
+                    <div class="col-md-5 mt-1">
+
+                        <div class="d-flex flex-row">
+                            <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                    class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                            <span></span>
+                        </div>
+
+                        <p class="text-justify text-truncate para mb-0">Ariana Grande-Butera born June 26, 1993) is <br>
+                            an American singer, songwriter, and <br> actress. Her four-octave vocal range has <br>
+                            received critical acclaim, and her personal life <br> has been the subject of widespread
+                            media <br> attention. <br><br></p>
+                    </div>
+                    <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+
+                        <div class="d-flex flex-column mt-4">
+                            <audio controls>
+                                <source src="Songs/6th.mp3" type="audio/ogg">
+                                <source src="Songs/6th.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row p-2 bg-white border rounded mt-2">
+                    <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image"
+                            src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/605441e65a5ce51dd851a61a/COLLECTION_12757457174465.png">
+                    </div>
+                    <div class="col-md-5 mt-1">
+
+                        <div class="d-flex flex-row">
+                            <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                    class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                            <span></span>
+                        </div>
+
+                        <p class="text-justify text-truncate para mb-0">Justin Bieber is a global pop icon that started
+                            <br> out as a YouTube sensation. He became the <br> first artist to have seven songs from a
+                            debut <br> record chart on the Billboard Hot 100. His <br> U.S. album and singles sales
+                            total 44.7 million. <br><br>
+                        </p>
+                    </div>
+                    <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+
+                        <div class="d-flex flex-column mt-4">
+                            <audio controls>
+                                <source src="Songs/7th.mp3" type="audio/ogg">
+                                <source src="Songs/7th.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="row p-2 bg-white border rounded mt-2">
+                    <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image"
+                            src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/artists/profile/5a8e73342951624319d6bab9.png">
+                    </div>
+                    <div class="col-md-5 mt-1">
+
+                        <div class="d-flex flex-row">
+                            <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                    class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                            <span></span>
+                        </div>
+
+                        <p class="text-justify text-truncate para mb-0">Selena Gomez is an American singer and <br>
+                            actress, who rose to fame playing the lead <br> role of Alex Russo in the Disney Channel
+                            <br> television series Wizards of Waverly Place. <br> In 2008, she formed the band Selena
+                            Gomez <br> & the Scene. The group released three <br> studio albums <br><br>
+                        </p>
+                    </div>
+                    <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+
+                        <div class="d-flex flex-column mt-4">
+                            <audio controls>
+                                <source src="Songs/8th.mp3" type="audio/ogg">
+                                <source src="Songs/8th.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- h1 -->
+    <h1>Punjabi hits <i class="fa-solid fa-music"></i></h1>
+
+    <div class="container mt-5 mb-5">
+        <div class="d-flex justify-content-center row">
+            <div class="col-md-10">
+                <div class="row p-2 bg-white border rounded">
+                    <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image"
+                            src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3.ap-south-1.amazonaws.com/discovery-prod-zion/zion/1659528809310-jassi_gill.jpg">
+                    </div>
+                    <div class="col-md-5 mt-1">
+
+                        <div class="d-flex flex-row">
+                            <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                    class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                            <span></span>
+                        </div>
+
+                        <p class="text-justify text-truncate para mb-0">Jassi Gill (born 26 November 1988) <br> is an
+                            Indian singer, live perfomer and actor <br>
+                            associated with Punjabi and Hindi language <br> music and films. He debuted in Punjabi <br>
+                            cinema with the 2014 film Mr & Mrs 420 and <br> in Hindi cinema with the 2018 film Happy
+                            <br> Phirr Bhag Jayegi. <br><br>
+                        </p>
+                    </div>
+                    <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+
+                        <div class="d-flex flex-column mt-4">
+                            <audio controls>
+                                <source src="Songs/9th.mp3" type="audio/ogg">
+                                <source src="Songs/9th.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="row p-2 bg-white border rounded mt-2">
+                    <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image"
+                            src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3.ap-south-1.amazonaws.com/discovery-prod-zion/zion/1671119952258-Diljit_Dosanjh.jpg">
+                    </div>
+                    <div class="col-md-5 mt-1">
+
+                        <div class="d-flex flex-row">
+                            <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                    class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                            <span></span>
+                        </div>
+
+                        <p class="text-justify text-truncate para mb-0">Diljit Dosanjh was born (6 January 1984) into
+                            <br> a Sikh family in the village of Dosanjh Kalan, <br> Jalandhar district, Punjab, India.
+                            He is <br> an Indian actor, singer, television presenter <br> and social media celebrity who
+                            works in <br> Punjabi and Hindi cinema. <br><br>
+                        </p>
+                    </div>
+                    <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+
+                        <div class="d-flex flex-column mt-4">
+                            <audio controls>
+                                <source src="Songs/10th.mp3" type="audio/ogg">
+                                <source src="Songs/10th.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row p-2 bg-white border rounded mt-2">
+                    <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image"
+                            src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/artists/profile/5b75399c29516231d689af8b.png">
+                    </div>
+                    <div class="col-md-5 mt-1">
+
+                        <div class="d-flex flex-row">
+                            <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                    class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                            <span></span>
+                        </div>
+
+                        <p class="text-justify text-truncate para mb-0">Jass Manak is an Punjabi Singer, Music <br>
+                            Composer, Lyricist and Professional Model <br> born on 23rd Dec 1993 in Mohali, Punjab. <br>
+                            He has sing many famous Punjabi songs like <br> U Turn, Downtown, Bentley Kaali, and Story.
+                            <br><br>
+                        </p>
+                    </div>
+                    <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+
+                        <div class="d-flex flex-column mt-4">
+                            <audio controls>
+                                <source src="Songs/11th.mp3" type="audio/ogg">
+                                <source src="Songs/11th.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="row p-2 bg-white border rounded mt-2">
+                    <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image"
+                            src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3.ap-south-1.amazonaws.com/discovery-prod-zion/zion/1663563931562-11.jpg">
+                    </div>
+                    <div class="col-md-5 mt-1">
+
+                        <div class="d-flex flex-row">
+                            <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                    class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                            <span></span>
+                        </div>
+
+                        <p class="text-justify text-truncate para mb-0">Guru Randhawa born August 30, 1991) is a <br>
+                            Punjabi singer and songwriter from <br> District Gurdaspur , Punjab . Randhawa is <br> known
+                            for tracks like High Rated Gabru, <br> Suit, Yaar Mod Do, Patola and Fashion Etc. <br><br>
+                        </p>
+                    </div>
+                    <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+
+                        <div class="d-flex flex-column mt-4">
+                            <audio controls>
+                                <source src="Songs/12th.mp3" type="audio/ogg">
+                                <source src="Songs/12th.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- h1 -->
+    <h1>Top DJ <i class="fa-solid fa-music"></i></h1>
+
+    <div class="container mt-5 mb-5">
+        <div class="d-flex justify-content-center row">
+            <div class="col-md-10">
+                <div class="row p-2 bg-white border rounded">
+                    <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image"
+                            src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3.ap-south-1.amazonaws.com/discovery-prod-zion/zion/1671119553458-alan_walker.jpg">
+                    </div>
+                    <div class="col-md-5 mt-1">
+
+                        <div class="d-flex flex-row">
+                            <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                    class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                            <span></span>
+                        </div>
+
+                        <p class="text-justify text-truncate para mb-0">Alan Olav Walker (born 24 August 1997), <br>
+                            formerly known by his stage name DJ <br> Walkzz, is a Norwegian record producer and <br> DJ.
+                            He is best known for his 2015 single <br> "Faded", which received platinum <br>
+                            certifications in over 10 different countries. <br><br></p>
+                    </div>
+                    <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+
+                        <div class="d-flex flex-column mt-4">
+                            <audio controls>
+                                <source src="Songs/13th.mp3" type="audio/ogg">
+                                <source src="Songs/13th.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="row p-2 bg-white border rounded mt-2">
+                    <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image"
+                            src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/artists/profile/5aeaaeb629516213713c719d.png">
+                    </div>
+                    <div class="col-md-5 mt-1">
+
+                        <div class="d-flex flex-row">
+                            <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                    class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                            <span></span>
+                        </div>
+
+                        <p class="text-justify text-truncate para mb-0">Enigmatic masked DJ/Producer Marshmello <br>
+                            makes groove-oriented, synth and bass <br> heavy electronic music. In the spirit of other
+                            <br> masked DJs like Deadmau5 and Daft Punk,<br> Marshmello (whose identuty remains a <br>
+                            mystery) appears wearing a <br> full-head-covering marshmallow mask. <br><br>
+                        </p>
+                    </div>
+                    <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+
+                        <div class="d-flex flex-column mt-4">
+                            <audio controls>
+                                <source src="Songs/14th.mp3" type="audio/ogg">
+                                <source src="Songs/14th.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row p-2 bg-white border rounded mt-2">
+                    <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image"
+                            src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3.ap-south-1.amazonaws.com/discovery-prod-zion/zion/1667204062911-DJ_Snake-wa_68b21043.png">
+                    </div>
+                    <div class="col-md-5 mt-1">
+
+                        <div class="d-flex flex-row">
+                            <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                    class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                            <span></span>
+                        </div>
+
+                        <p class="text-justify text-truncate para mb-0">DJ Snake is a Grammy-nominated producer <br> and
+                            artist who debuted into the international <br> scene with singles "Bird Machine" and "Turn
+                            <br> Down for What" in 2013. "Lean On" - his <br> 2015 collaboration with Diplo's Major
+                            Lazer <br> was a crossover hit, that topped the <br> charts in many countries. <br><br>
+                        </p>
+                    </div>
+                    <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+
+                        <div class="d-flex flex-column mt-4">
+                            <audio controls>
+                                <source src="Songs/15th.mp3" type="audio/ogg">
+                                <source src="Songs/15th.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="row p-2 bg-white border rounded mt-2">
+                    <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image"
+                            src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_sonymusic/music/srch_sonymusic_A10328E0007047777C.jpg">
+                    </div>
+                    <div class="col-md-5 mt-1">
+
+                        <div class="d-flex flex-row">
+                            <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                    class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                            <span></span>
+                        </div>
+
+                        <p class="text-justify text-truncate para mb-0">"I'm an Albatraoz"is a 2014 single by <br>
+                            Swedish DJ and record producer <br> AronChupa, featuring uncredited vocals from <br> Nora
+                            Ekberg, his younger sister, better known <br> by her stage name Little Sis Nora. <br><br>
+                        </p>
+                    </div>
+                    <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+
+                        <div class="d-flex flex-column mt-4">
+                            <audio controls>
+                                <source src="Songs/16th.mp3" type="audio/ogg">
+                                <source src="Songs/16th.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer class="bg-dark text-center text-white">
+        <div class="container p-4 pb-0">
+            <section class="mb-4">
+                <a class="btn btn-outline-light btn-floating m-2" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+
+
+                <a class="btn btn-outline-light btn-floating m-2" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+
+
+                <a class="btn btn-outline-light btn-floating m-2" href="#!" role="button"><i
+                        class="fab fa-google"></i></a>
+
+
+                <a class="btn btn-outline-light btn-floating m-2" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+
+                <a class="btn btn-outline-light btn-floating m-2" href="#!" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+
+            </section>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright:
+            <a class="text-white" href="loging.html">musify.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+
+
+
+
+
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
